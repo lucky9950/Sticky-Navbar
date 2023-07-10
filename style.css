@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+}
+.Top-Container{
+    background-image: url("https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=878&q=80");
+    height: 100vh;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.Top-Container h1{
+    color: azure;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+
+}
+.text{
+    margin: 50px 5px;
+    font-family: sans-serif;
+    margin: 50px 5px;
+
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    transition: all 400ms ease;
+}
+.navbar.red{
+    background: red;
+}
+.navbar.orange{
+    background: orange;
+}
+.navbar.yellow{
+    background: yellow;
+}
+.navbar.green{
+    background: green;
+}
+.navbar.blue{
+    background: blue;
+}
+.navbar.indigo{
+    background: indigo;
+}
+.navbar.voilet{
+    background: rgb(216, 7, 216);
+}
+   
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-family: cursive;
+}
+.navbar ul li a:hover{
+    color: red;
+    
+}
+
+
+.bottom-container{
+    animation: rainbow-bg 2.5s linear;
+    animation-iteration-count: infinite;
+}
+
+ @keyframes rainbow-bg{
+    100%,0%{
+        background-color: rgb(255,0,0);
+    }
+    8%{ 
+        background-color: rgb(255,127,0);
+     } 
+    16%{
+        background-color: rgb(255,255,0); 
+    }
+    25%{
+        background-color: rgb(127,255,0);
+    }
+    33%{
+        background-color: rgb(0,255,0);
+    }
+    41%{
+        background-color: rgb(0,255,127);
+    }
+    50%{
+        background-color: rgb(0,255,255);
+    }
+    58%{
+         background-color: rgb(0,127,255);
+    } 
+    66%{
+        background-color: rgb(0,0,255); 
+    }
+    75%{
+        background-color: rgb(127,0,255);
+    }
+    83%{
+        background-color: rgb(255,0,255);
+    }
+    91%{
+        background-color: rgb(255,0,127);
+    }
+} 
